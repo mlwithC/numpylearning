@@ -1,0 +1,64 @@
+NumPy Roadmap for ML Engineering
+1. Arrays & Basics (Creation, Shapes, Indexing, Slicing)
+👉 Used everywhere in ML (datasets are arrays).
+Basic:
+•	Create a 1D, 2D, and 3D NumPy array. Print their shapes.
+•	Create an array of numbers from 0 to 20 with step size 2.
+•	Slice the above array to get only even numbers.
+•	Create a 3x3 matrix and extract the 2nd row and 3rd column.
+Intermediate:
+•	Create a 5x5 identity matrix.
+•	Reshape an array of 25 numbers into a 5x5 matrix.
+•	Reverse an array without using loops.
+Advanced:
+•	Given a 6x6 matrix, extract the inner 4x4 submatrix.
+•	Write code to flatten any n-dimensional array into 1D.
+________________________________________
+2. Array Operations (Math, Broadcasting, Aggregations)
+👉 Used in ML for vectorized operations instead of loops.
+Basic:
+•	Perform element-wise addition, subtraction, multiplication, division on two arrays.
+•	Calculate mean, median, variance, and standard deviation of an array.
+Intermediate:
+•	Given two arrays of shapes (3,1) and (1,3), perform broadcasting addition.
+•	Normalize an array (scale values between 0 and 1).
+Advanced:
+•	Implement z-score normalization manually using NumPy.
+•	Compute pairwise Euclidean distance between rows of a 2D array.
+________________________________________
+3. Boolean Indexing & Filtering
+👉 Used to filter datasets based on conditions.
+Basic:
+•	From an array of numbers 0–50, extract only multiples of 5.
+•	Given a 1D array, replace all negative numbers with 0.
+Intermediate:
+•	From a 2D matrix, select all elements greater than the mean.
+•	Replace all odd numbers in an array with -1.
+Advanced:
+•	Implement a function that filters outliers (values more than 2 std deviations from mean).
+•	From a random dataset, extract the top 5% of values.
+________________________________________
+4. Random Number Generation
+👉 Used to simulate datasets, initialize ML weights.
+Basic:
+•	Generate 10 random integers between 1 and 100.
+•	Generate a 3x3 matrix of random floats between 0 and 1.
+Intermediate:
+•	Generate a 1D array of 1000 random numbers and plot their histogram (check normal distribution).
+•	Set a random seed and show reproducibility.
+Advanced:
+•	Create a random dataset of shape (1000,5) representing 1000 samples with 5 features.
+•	Simulate a biased coin toss (70% heads, 30% tails) 1000 times and calculate the probability.
+________________________________________
+5. Linear Algebra (Dot Product, Matrix Operations, Eigenvalues)
+👉 The heart of ML (used in regression, PCA, neural nets).
+Basic:
+•	Compute the dot product of two vectors.
+•	Multiply two matrices.
+Intermediate:
+•	Compute the inverse and determinant of a matrix.
+•	Solve a system of linear equations using np.linalg.solve.
+Advanced:
+•	Compute eigenvalues & eigenvectors of a matrix.
+•	Implement a function to compute cosine similarity between two vectors.
+
